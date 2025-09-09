@@ -1,3 +1,20 @@
+steps
+1) git clone
+2) npm install
+3) in package.json replace dev script with  "dev": "vite --host 0.0.0.0",
+4) npm run dev
+5) connect both phone and laptop to a single wifi 
+6) open "Network" address in chrome (phone) eg
+       Local:   http://localhost:5173/ 
+  ➜  Network: http://192.168.172.120:5173/ ✅
+or
+  ➜  Network: http://172.26.224.1:5173/ ✅
+7) in chrome , click add to home page from settings 
+8) use
+
+
+
+
 # Jupiter Banking Website
 
 A modern, responsive React.js banking application with a beautiful UI and comprehensive banking features.
