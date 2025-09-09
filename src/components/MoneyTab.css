@@ -1,0 +1,428 @@
+.money-tab {
+  padding: 16px;
+  background: #F7F5F0;
+  min-height: 100vh;
+  color: #343A40;
+  margin: 0;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  color: #343A40;
+}
+
+.header p {
+  font-size: 14px;
+  color: #343A40;
+  margin: 4px 0 0 0;
+  opacity: 0.7;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 16px;
+  border: 2px solid #E9746B;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.stat-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.stat-card.income .stat-icon {
+  background: #E9746B;
+  color: #FFFFFF;
+}
+
+.stat-card.expense .stat-icon {
+  background: #343A40;
+  color: #FFFFFF;
+}
+
+.stat-card.savings .stat-icon {
+  background: #E9746B;
+  color: #FFFFFF;
+}
+
+.stat-icon .icon {
+  width: 20px;
+  height: 20px;
+}
+
+.stat-content h3 {
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0 0 6px 0;
+  color: #343A40;
+}
+
+.stat-amount {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+  color: #343A40;
+}
+
+.quick-actions {
+  margin-bottom: 20px;
+}
+
+.quick-actions h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #343A40;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.action-btn {
+  flex: 1;
+  background: #FFFFFF;
+  border: 2px solid #E9746B;
+  border-radius: 12px;
+  padding: 16px 12px;
+  color: #343A40;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.action-btn:hover {
+  background: #E9746B;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+.action-btn.transfer {
+  background: #E9746B;
+  color: #FFFFFF;
+}
+
+.action-btn.transfer:hover {
+  background: #343A40;
+}
+
+.action-btn.pay {
+  background: #FFFFFF;
+  color: #343A40;
+}
+
+.action-btn.pay:hover {
+  background: #E9746B;
+  color: #FFFFFF;
+}
+
+.action-btn.invest {
+  background: #343A40;
+  color: #FFFFFF;
+}
+
+.action-btn.invest:hover {
+  background: #E9746B;
+}
+
+.action-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.transactions-section,
+.budget-section {
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 16px;
+  border: 2px solid #E9746B;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.section-header h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  color: #343A40;
+}
+
+.view-all {
+  font-size: 12px;
+  color: #E9746B;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+
+.view-all:hover {
+  color: #343A40;
+}
+
+.transactions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.transaction-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: #F7F5F0;
+  border-radius: 12px;
+  transition: background 0.3s ease;
+}
+
+.transaction-item:hover {
+  background: rgba(233, 116, 107, 0.1);
+}
+
+.transaction-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.transaction-icon.income {
+  background: #E9746B;
+  color: #FFFFFF;
+}
+
+.transaction-icon.expense {
+  background: #343A40;
+  color: #FFFFFF;
+}
+
+.transaction-icon .icon {
+  width: 16px;
+  height: 16px;
+}
+
+.transaction-details {
+  flex: 1;
+}
+
+.transaction-title {
+  font-weight: 600;
+  margin-bottom: 2px;
+  font-size: 14px;
+  color: #343A40;
+}
+
+.transaction-meta {
+  display: flex;
+  gap: 8px;
+  font-size: 11px;
+  color: #343A40;
+  opacity: 0.6;
+}
+
+.transaction-category {
+  background: rgba(233, 116, 107, 0.2);
+  padding: 2px 6px;
+  border-radius: 8px;
+  color: #E9746B;
+}
+
+.transaction-amount {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.transaction-amount.income {
+  color: #E9746B;
+}
+
+.transaction-amount.expense {
+  color: #343A40;
+}
+
+.budget-section h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #343A40;
+}
+
+.budget-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.budget-card {
+  background: #F7F5F0;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.budget-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.budget-header h4 {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  color: #343A40;
+}
+
+.budget-used {
+  font-size: 12px;
+  color: #343A40;
+  opacity: 0.7;
+}
+
+.budget-progress {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 6px;
+  background: rgba(233, 116, 107, 0.2);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #E9746B;
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.budget-percentage {
+  font-size: 12px;
+  font-weight: 600;
+  min-width: 35px;
+  text-align: right;
+  color: #343A40;
+}
+
+/* Mobile-specific optimizations */
+@media (max-width: 768px) {
+  .money-tab {
+    padding: 12px;
+  }
+  
+  .header {
+    margin-bottom: 16px;
+  }
+  
+  .header h1 {
+    font-size: 20px;
+  }
+  
+  .stats-grid {
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .stat-card {
+    padding: 12px;
+  }
+  
+  .stat-icon {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 8px;
+  }
+  
+  .stat-icon .icon {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .stat-content h3 {
+    font-size: 11px;
+  }
+  
+  .stat-amount {
+    font-size: 14px;
+  }
+  
+  .action-buttons {
+    gap: 8px;
+  }
+  
+  .action-btn {
+    padding: 12px 8px;
+    font-size: 11px;
+  }
+  
+  .action-icon {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .transactions-section,
+  .budget-section {
+    padding: 12px;
+    margin-bottom: 12px;
+  }
+  
+  .transaction-item {
+    padding: 10px;
+  }
+  
+  .transaction-icon {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .transaction-icon .icon {
+    width: 14px;
+    height: 14px;
+  }
+  
+  .budget-card {
+    padding: 12px;
+  }
+}

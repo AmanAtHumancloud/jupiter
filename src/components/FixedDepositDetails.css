@@ -1,0 +1,372 @@
+.fd-details-page {
+  padding: 16px;
+  background: #F7F5F0;
+  min-height: 100vh;
+  color: #343A40;
+  margin: 0;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.back-button {
+  background: #FFFFFF;
+  border: 2px solid #E9746B;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #E9746B;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.back-button:hover {
+  background: #E9746B;
+  color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+.back-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.page-header h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  color: #343A40;
+}
+
+.fd-overview-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 25px;
+  margin-bottom: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.fd-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.fd-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(34, 197, 94, 0.2);
+  color: #22c55e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+.fd-icon .icon {
+  width: 24px;
+  height: 24px;
+}
+
+.fd-basic-info h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 5px 0;
+}
+
+.fd-account {
+  font-size: 14px;
+  opacity: 0.8;
+  margin: 0 0 8px 0;
+}
+
+.fd-status {
+  background: rgba(34, 197, 94, 0.2);
+  color: #22c55e;
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.fd-status.active {
+  background: rgba(34, 197, 94, 0.2);
+  color: #22c55e;
+}
+
+.fd-amount-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.current-balance {
+  display: flex;
+  flex-direction: column;
+}
+
+.balance-label {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 5px;
+}
+
+.balance-amount {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.interest-rate {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(34, 197, 94, 0.2);
+  color: #22c55e;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.rate-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.fd-details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.detail-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.detail-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.detail-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  opacity: 0.9;
+}
+
+.detail-header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.detail-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.detail-item:last-child {
+  border-bottom: none;
+}
+
+.detail-label {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.detail-value {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.detail-value.highlight {
+  color: #22c55e;
+  font-size: 16px;
+}
+
+.fd-actions {
+  margin-bottom: 30px;
+}
+
+.withdraw-button {
+  width: 100%;
+  background: rgba(251, 146, 60, 0.2);
+  border: 1px solid rgba(251, 146, 60, 0.3);
+  border-radius: 15px;
+  padding: 18px;
+  color: #fb923c;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.withdraw-button:hover {
+  background: rgba(251, 146, 60, 0.3);
+  transform: translateY(-2px);
+}
+
+.action-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.fd-terms {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.fd-terms h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  opacity: 0.9;
+}
+
+.fd-terms ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.fd-terms li {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.fd-terms li:before {
+  content: "•";
+  color: #22c55e;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.modal-content {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 400px;
+  width: 100%;
+  color: #1f2937;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.modal-icon {
+  width: 24px;
+  height: 24px;
+  color: #f59e0b;
+  margin-right: 10px;
+}
+
+.modal-header h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  color: #1f2937;
+}
+
+.modal-body {
+  margin-bottom: 25px;
+}
+
+.modal-body p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  color: #4b5563;
+}
+
+.modal-body p:last-child {
+  margin-bottom: 0;
+}
+
+.modal-body strong {
+  color: #1f2937;
+  font-weight: 600;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-button {
+  background: #667eea;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 24px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.modal-button:hover {
+  background: #5a67d8;
+  transform: translateY(-1px);
+}
+
+.modal-button.primary {
+  background: #667eea;
+}

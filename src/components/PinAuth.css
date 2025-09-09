@@ -1,0 +1,210 @@
+.pin-auth-container {
+  min-height: 100vh;
+  background: #F7F5F0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  margin: 0;
+}
+
+.pin-auth-card {
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 32px 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 360px;
+  text-align: center;
+  border: 2px solid #E9746B;
+}
+
+.auth-header {
+  margin-bottom: 40px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.logo-icon {
+  width: 32px;
+  height: 32px;
+  color: #E9746B;
+}
+
+.logo h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #343A40;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  color: #343A40;
+  font-size: 16px;
+  margin: 0;
+  font-weight: 500;
+  opacity: 0.7;
+}
+
+.pin-form {
+  margin-bottom: 32px;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.input-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #E9746B;
+  width: 20px;
+  height: 20px;
+}
+
+.pin-input {
+  width: 100%;
+  padding: 16px 16px 16px 48px;
+  border: 2px solid #E9746B;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 8px;
+  text-align: center;
+  background: #FFFFFF;
+  color: #343A40;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.pin-input:focus {
+  outline: none;
+  border-color: #343A40;
+  background: #FFFFFF;
+  box-shadow: 0 0 0 3px rgba(233, 116, 107, 0.2);
+}
+
+.pin-input::placeholder {
+  letter-spacing: normal;
+  font-weight: 400;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 16px;
+  background: #E9746B;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(233, 116, 107, 0.3);
+}
+
+.submit-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(233, 116, 107, 0.4);
+  background: #343A40;
+}
+
+.submit-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.error-message {
+  color: #e53e3e;
+  font-size: 14px;
+  margin-top: 12px;
+  font-weight: 500;
+}
+
+.security-note {
+  padding-top: 24px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.security-note p {
+  color: #718096;
+  font-size: 14px;
+  margin: 0;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .pin-auth-container {
+    padding: 16px;
+  }
+  
+  .pin-auth-card {
+    padding: 32px 24px;
+    margin: 0;
+    max-width: 100%;
+    border-radius: 20px;
+  }
+  
+  .logo h1 {
+    font-size: 28px;
+  }
+  
+  .subtitle {
+    font-size: 14px;
+  }
+  
+  .pin-input {
+    font-size: 20px;
+    padding: 18px 18px 18px 50px;
+    letter-spacing: 10px;
+  }
+  
+  .submit-button {
+    padding: 18px;
+    font-size: 16px;
+  }
+  
+  .input-icon {
+    left: 18px;
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pin-auth-card {
+    padding: 28px 20px;
+    border-radius: 16px;
+  }
+  
+  .logo h1 {
+    font-size: 24px;
+  }
+  
+  .logo-icon {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .pin-input {
+    font-size: 18px;
+    padding: 16px 16px 16px 48px;
+    letter-spacing: 8px;
+  }
+  
+  .submit-button {
+    padding: 16px;
+    font-size: 15px;
+  }
+}
